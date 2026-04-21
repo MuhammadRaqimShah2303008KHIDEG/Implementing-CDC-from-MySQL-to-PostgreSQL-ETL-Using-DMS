@@ -1,0 +1,385 @@
+{
+    "rules": [
+        {
+            "rule-id": 1983821445,
+            "rule-name": "mnzq0ieo-hdak4h",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "transactions"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821446,
+            "rule-name": "mnzq0ieo-hdahak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821447,
+            "rule-name": "mnzq0ieo-hdoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "transactions"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821448,
+            "rule-name": "mnzq0ieo-hdaref",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "refund_requests"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821449,
+            "rule-name": "mnzq0ieo-refhak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821450,
+            "rule-name": "mnzq0ieo-reoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "refund_requests"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821451,
+            "rule-name": "mnzq0ieo-hdapi",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "api_logs"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821452,
+            "rule-name": "mnzq0ieo-apihak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821453,
+            "rule-name": "mnzq0ieo-apoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "api_logs"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821454,
+            "rule-name": "mnzq0ieo-apicol",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "api_logs",
+                "column-name": "tran_Id"
+            },
+            "rule-action": "rename",
+            "value": "transaction_transactionID"
+        },
+        {
+            "rule-id": 1983821455,
+            "rule-name": "mnzq0ieo-hdext",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "external_responses"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821456,
+            "rule-name": "mnzq0ieo-exthak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821457,
+            "rule-name": "mnzq0ieo-exoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "external_responses"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821458,
+            "rule-name": "mnzq0ieo-hdmer",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "merchant_detail"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821459,
+            "rule-name": "mnzq0ieo-merhak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821460,
+            "rule-name": "mnzq0ieo-meoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "merchant_detail"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821461,
+            "rule-name": "mnzq0ieo-mercol1",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "merchant_detail",
+                "column-name": "inst_remittance"
+            },
+            "rule-action": "rename",
+            "value": "instRemittance"
+        },
+        {
+            "rule-id": 1983821462,
+            "rule-name": "mnzq0ieo-mercol2",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "merchant_detail",
+                "column-name": "max_amount_remit"
+            },
+            "rule-action": "rename",
+            "value": "maxAmountRemit"
+        },
+        {
+            "rule-id": 1983821463,
+            "rule-name": "mnzq0ieo-hdrts",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "refund_transaction_status"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821464,
+            "rule-name": "mnzq0ieo-rtshak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821465,
+            "rule-name": "mnzq0ieo-rtoho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "refund_transaction_status"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821466,
+            "rule-name": "mnzq0ieo-hdtrr",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "transaction_refund"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821467,
+            "rule-name": "mnzq0ieo-trrhak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821468,
+            "rule-name": "mnzq0ieo-rroho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "transaction_refund"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+        {
+            "rule-id": 1983821469,
+            "rule-name": "mnzq0ieo-hdpos",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "postback"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821470,
+            "rule-name": "mnzq0ieo-poshak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821471,
+            "rule-name": "mnzq0ieo-pooho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "postback"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        },
+                {
+            "rule-id": 1983821472,
+            "rule-name": "mnzq0ieo-hdcar",
+            "rule-type": "selection",
+            "rule-action": "include",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "card_user_safepay_tokens"
+            },
+            "filters": []
+        },
+        {
+            "rule-id": 1983821473,
+            "rule-name": "mnzq0ieo-carhak",
+            "rule-type": "transformation",
+            "rule-target": "schema",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource"
+            },
+            "rule-action": "rename",
+            "value": "warehouse"
+        },
+        {
+            "rule-id": 1983821474,
+            "rule-name": "mnzq0ieo-croho",
+            "rule-type": "transformation",
+            "rule-target": "column",
+            "object-locator": {
+                "schema-name": "dev_simpaisa_datasource",
+                "table-name": "card_user_safepay_tokens"
+            },
+            "rule-action": "add-column",
+            "value": "dbId",
+            "expression": "8",
+            "data-type": {
+                "type": "int4"
+            }
+        }
+    ]
+}
